@@ -121,6 +121,7 @@
     snapShotView.layer.cornerRadius = 15;
     snapShotView.frame = [containerView convertRect:fromView.frame fromView:fromView.superview];
     
+    
     fromView.hidden = YES;
     originView.hidden = YES;
     
