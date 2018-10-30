@@ -9,8 +9,6 @@
 #ifndef GlobeHeader_pch
 #define GlobeHeader_pch
 
-//相对路径：$(SRCROOT)/Douban-today/Utils/PrefixHeader.pch
-
 #import "Utils.h"
 #import "DzwSingleton.h"
 #import "DzwBaseNetWork.h"

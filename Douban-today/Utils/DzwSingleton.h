@@ -10,7 +10,6 @@
 #import "MainTabbarViewController.h"
 @interface DzwSingleton : NSObject
 
-@property (nonatomic, assign) BOOL kIsTouchIDVerification;
 @property (nonatomic, strong) MainTabbarViewController *tabBarVC;
 @property (nonatomic, copy) NSString *currentCity;
 + (DzwSingleton *)sharedInstance;

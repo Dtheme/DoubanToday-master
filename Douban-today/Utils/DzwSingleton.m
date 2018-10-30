@@ -17,8 +17,7 @@ static DzwSingleton *_sharedInstance = nil;
     static dispatch_once_t predicate;
     dispatch_once(&predicate, ^{
         _sharedInstance = [[self alloc] init];
-        _sharedInstance.kIsTouchIDVerification = NO;
-    
+        _sharedInstance.currentCity = @"";
     });
     return _sharedInstance;
 }

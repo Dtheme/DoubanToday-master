@@ -65,7 +65,7 @@
     titleLabel.text = cell.titleLabel.text;
     
     UILabel *contentLabel = [[UILabel alloc]initWithFrame:CGRectMake(15, (SCREEN_WIDTH-40)*1.3-30, SCREEN_WIDTH-44, 15)];
-    contentLabel.font = [UIFont fontWithName:@"PingFangSC-Light" size:15.f];//FONT_PF(15);
+    contentLabel.font = [UIFont fontWithName:@"PingFangSC-Light" size:15.f];
     contentLabel.textColor = [UIColor whiteColor];
     contentLabel.textAlignment = NSTextAlignmentLeft;
     contentLabel.alpha = 0.5;
@@ -98,8 +98,9 @@
         
         toView.hidden = NO;
         fromView.hidden = NO;
-        [snapShotView removeFromSuperview];
-//        [fromVC.tableView reloadData];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [snapShotView removeFromSuperview];
+        });
         [transitionContext completeTransition:!transitionContext.transitionWasCancelled];
     }];
 }
