@@ -9,7 +9,7 @@ tableview还有一些卡顿问题，暂时没有处理。
 
 效果：
 
-![img](https://github.com/Dtheme/DoubanToday-master/blob/master/gif/animation.gif)
+<div align=center>![img](https://github.com/Dtheme/DoubanToday-master/blob/master/gif/animation.gif)
 
 
 
