@@ -83,7 +83,7 @@ cell.transform = CGAffineTransformMakeScale(0.9, 0.9);
 }
 ```
 
-第三部分：pop转场动画 `TodayTransition`的`pushAnimateTransition:`中实现
+第三部分：pop转场动画 `TodayTransition`的`popAnimateTransition:`中实现
 
 ```objective-c
 - (void)popAnimateTransition:(id <UIViewControllerContextTransitioning>)transitionContext{
