@@ -149,7 +149,7 @@
 #pragma mark - 下拉手势
 - (void)pan:(UIPanGestureRecognizer *)pan {
     switch (pan.state) {
-        case UIGestureRecognizerStateBegan: {   // 手势开始
+        case UIGestureRecognizerStateBegan: {
             CGPoint currentPoint =[pan locationInView:self.tableView];
             startPointY = currentPoint.y;
             startPointX = currentPoint.x;
@@ -159,9 +159,9 @@
                 isHorizontal = YES;
             }
         } break;
-        case UIGestureRecognizerStateChanged: { // 手势状态改变
+        case UIGestureRecognizerStateChanged: {
             CGPoint currentPoint =[pan locationInView:self.tableView];
-            // 如果可以横划，判断是横划还是竖划
+            
             if (isHorizontal) {
                 if ((currentPoint.x-startPointX)>(currentPoint.y-startPointY)) {
                     scale = (SCREEN_WIDTH-(currentPoint.x-startPointX))/SCREEN_WIDTH;
@@ -194,7 +194,7 @@
                 [self.tableView setScrollEnabled:YES];
             }
         } break;
-        case UIGestureRecognizerStateEnded:  { // 手势结束
+        case UIGestureRecognizerStateEnded:  {  
             scale = 1;
             self.tableView.scrollEnabled = YES;
             if (scale>0.8) {

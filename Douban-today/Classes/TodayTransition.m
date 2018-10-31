@@ -89,7 +89,6 @@
         [containerView layoutIfNeeded];
         toVC.view.alpha = 1.0f;
         
-       
         snapShotView.frame = [containerView convertRect:toView.frame fromView:toView.superview];
         titleLabel.frame = CGRectMake(22, 30, SCREEN_WIDTH-30, 30);
         contentLabel.frame = CGRectMake(22, SCREEN_WIDTH*1.3-30, SCREEN_WIDTH*1.3-44, 15);
@@ -120,7 +119,6 @@
     snapShotView.layer.masksToBounds = YES;
     snapShotView.layer.cornerRadius = 15;
     snapShotView.frame = [containerView convertRect:fromView.frame fromView:fromView.superview];
-    
     
     fromView.hidden = YES;
     originView.hidden = YES;

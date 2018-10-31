@@ -111,6 +111,7 @@ UITableViewDataSource
     NSString *weekTime = [weekdays objectAtIndex:theComponents.weekday];
     return [NSString stringWithFormat:@"%@  %@",dateTime,weekTime];
 }
+
 #pragma mark - 截取view
 - (UIImage *)imageFromView {
     
