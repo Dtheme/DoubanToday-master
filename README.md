@@ -4,6 +4,14 @@ app store Today转场动画，数据展示为豆瓣电影今日热映电影数�
 App Store今日页面转场动画粗糙的模仿了一下。为了让页面看起来不那么单调，数据用了豆瓣电影今日热映的公开接口，城市使用的是当前定位城市，如果没有定位成功，就访问默认数据。
 
 
+
+### demo效果
+
+<div align=center><img src="https://github.com/Dtheme/DoubanToday-master/blob/master/gif/animation.gif"/></div>
+
+
+
+
 #### 实现思路分为3个部分：
 
 下面是核心代码：
@@ -158,11 +166,9 @@ cell.transform = CGAffineTransformMakeScale(0.9, 0.9);
 
 
 
-效果：
 
 
 
-<div align=center><img src="https://github.com/Dtheme/DoubanToday-master/blob/master/gif/animation.gif"/></div>
 
 
 
