@@ -12,7 +12,6 @@
 @interface DouFilmInfoViewController : UIViewController
 
 @property (nonatomic, strong) UIImage *bgImage;
-@property (nonatomic, strong) NSString *imageName;
 @property (nonatomic, strong) NSString *titles;
 @property (nonatomic, strong) NSString *titleTwo;
 @property (nonatomic, strong) NSString *content;

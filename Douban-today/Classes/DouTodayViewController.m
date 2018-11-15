@@ -212,7 +212,7 @@ UITableViewDataSource
 
 - (void)tableView:(UITableView *)tableView didUnhighlightRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    NSLog(@"%u",cell.selected);
+//    NSLog(@"%u",cell.selected);
     
     if ([selectIndexPath isEqual:indexPath]) {
         [UIView animateWithDuration:0.2 animations:^{
