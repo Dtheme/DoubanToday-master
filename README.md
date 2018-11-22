@@ -6,6 +6,7 @@ App Store今日页面转场动画粗糙的模仿了一下。为了让页面看�
 
 
 ### demo效果
+(gif可能有点大加载稍慢（6.6M）)
 
 <div align=center><img src="https://github.com/Dtheme/DoubanToday-master/blob/master/gif/animation.gif"/></div>
 
