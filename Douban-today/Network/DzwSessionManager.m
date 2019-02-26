@@ -17,7 +17,7 @@ static NSInteger const kDefaultRequestTime = 30;
     static DzwSessionManager *manager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        manager = [[DzwSessionManager self] init];
+        manager = [[self alloc] init];
     });
     
     return manager;
